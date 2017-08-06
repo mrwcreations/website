@@ -1,0 +1,264 @@
+<link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+<style>
+
+.c-hamburger--htra.is-active {
+  background-color: black;
+}
+
+
+
+.c-hamburger--htra {
+  background-color: black;
+}
+
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 9px;
+  right: 9px;
+  height: 4px;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+
+
+.c-hamburger--htra span {
+  transition: transform 0.3s;
+}
+
+.c-hamburger--htra span::before {
+  transform-origin: top left;
+  transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+
+.c-hamburger--htra span::after {
+  transform-origin: bottom left;
+  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htra.is-active {
+  background-color: black;
+}
+
+.c-hamburger--htra.is-active span {
+  transform: rotate(180deg);
+}
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 50%;
+}
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  transform: translateX(-4px) translateY(2px) rotate(-45deg);
+}
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  transform: translateX(-4px) translateY(-2px) rotate(45deg);
+}
+
+header {
+  position: relative;
+  height: 100px;
+  background-color:black;
+  margin: 0, 0, 0, 0;
+  padding: 0, 0, 0, 0;
+}
+
+
+
+header h1 {
+  color: white;
+}
+
+svg {
+  position: absolute;
+ padding:0,0,0,0;
+  width: 100%;
+  height: 100px;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    padding-right:10px;
+}
+
+.sidenav a {
+    padding: 8px 20px 10px 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+#main {
+    transition: margin-right .5s;
+   
+}
+
+.open {font-size:50px;cursor:pointer;text-align:right; right:10; position: absolute; top:10; COLOR:WHITE;}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 35px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Services</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "175px";
+    document.getElementById("main").style.marginRight = "175px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+}
+
+ $
+</script>
+     <body id="main">
+
+<header>
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="10 3 50 100" preserveAspectRatio="none">
+    -10<circle fill="white" cx="0" cy="100" r="60" />
+    <circle fill="white" cx="500" cy="100" r="100" />
+    
+  </svg>
+
+ 
+        <a class="c-hamburger c-hamburger--htra open" onclick="openNav()">
+          <span></span>
+        </a>
+     
+
+
+
+</header>
+
+ <div id="mySidenav" class="sidenav">
+  
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<script src="js/dist/githubIcons.js"></script>
+<script src="js/dist/carbonAd.js"></script>
+
+</head>
+<body>
+  
+
+   
+<script>
+  (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+</script>
+
+<!-- EXTERNAL SCRIPTS FOR CALLMENICK.COM, PLEASE DO NOT INCLUDE -->
+<script src="js/dist/githubIcons.js"></script>
+<script src="js/dist/carbonAd.js"></script>
