@@ -5,10 +5,36 @@
 
 <category name="Flash Animation"/>
 <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
-<icon src="PosterImg_54.png" width="1024" height="750"/>
+<icon src="PosterImg_210.png" width="1024" height="750"/>
 <require type="other" src="heart-city-1.html"/>
 <require type="javascript" src="heart-city-1.js"/>
+<require type="image" src="images/Bitmap10.png"/>
+<require type="image" src="images/Bitmap11.png"/>
+<require type="image" src="images/Bitmap12.png"/>
+<require type="image" src="images/Bitmap13.png"/>
+<require type="image" src="images/Bitmap14.png"/>
+<require type="image" src="images/Bitmap15.png"/>
+<require type="image" src="images/Bitmap16.png"/>
+<require type="image" src="images/Bitmap17.png"/>
+<require type="image" src="images/Bitmap18.png"/>
+<require type="image" src="images/Bitmap19.png"/>
+<require type="image" src="images/Bitmap20.png"/>
+<require type="image" src="images/Bitmap21.png"/>
+<require type="image" src="images/Bitmap22.png"/>
+<require type="image" src="images/Bitmap23.png"/>
+<require type="image" src="images/Bitmap24.png"/>
+<require type="image" src="images/Bitmap26.png"/>
+<require type="image" src="images/Bitmap27.png"/>
+<require type="image" src="images/Bitmap28.png"/>
+<require type="image" src="images/Bitmap29.png"/>
+<require type="image" src="images/Bitmap30.png"/>
+<require type="image" src="images/Bitmap5.png"/>
+<require type="image" src="images/Bitmap6.png"/>
+<require type="image" src="images/Bitmap7.png"/>
+<require type="image" src="images/Bitmap8.png"/>
+<require type="image" src="images/Bitmap9.png"/>
 <require type="image" src="images/flash0ai.png"/>
+<require type="image" src="images/heart_city_1_atlas_P_.png"/>
 <require type="other" src="images/_preloader.gif"/>
 <require type="folder" src="images"/>
 <content></content>
